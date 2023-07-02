@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgrenciNotMVC-2", "..\OgrenciNotMVC-2\OgrenciNotMVC-2\OgrenciNotMVC-2.csproj", "{4C0FEB61-A5CF-48FD-8BCB-FFE178CC1967}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgrenciNotMVC-2", ".\OgrenciNotMVC-2\OgrenciNotMVC-2.csproj", "{4C0FEB61-A5CF-48FD-8BCB-FFE178CC1967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
