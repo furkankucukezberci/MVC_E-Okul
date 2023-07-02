@@ -1,0 +1,36 @@
+﻿@using OgrenciNotMVC_2.Models.EntityFramework
+@model List<TBLOGRENCILER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>ÖĞRENCi ID</th>
+        <th>ADI</th>
+        <th>SOYADI</th>
+        <th>CİNSİYET</th>
+        <th>KULÜP</th>
+        <th>İŞLEMLER</th>
+    </tr>
+    <tbody>
+        @foreach (var ogrnc in Model)
+        {
+            <tr>
+                <td>@ogrnc.OGRENCIID</td>
+                <td>@ogrnc.OGRAD</td>
+                <td>@ogrnc.OGRSOYAD</td>
+                <td>@ogrnc.OGRCINSIYET</td>
+                <td>@ogrnc.TBLKULUPLER.KULUPAD</td>
+                <td>
+                    <a href="/Ogrenci/Sil/@ogrnc.OGRENCIID" class="btn btn-danger">Sil</a>
+                    <a href="/Ogrenci/OgrenciGetir/@ogrnc.OGRENCIID" class="btn btn-warning">Güncelle</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Ogrenci/YeniOgrenci" class="btn btn-primary">Yeni Öğrenci Kayıt</a>
+
